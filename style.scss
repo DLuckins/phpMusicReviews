@@ -1,0 +1,314 @@
+$lightBlue:#5b6dcd;
+$Blue:#44519a;
+$gray:#3C3D37;
+$bgGray:#d3d3ce;
+$lightGray:#616359;
+$black:#181C14;
+$lightRed:#bd2034;
+$Red:#971a2a;
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: $bgGray;
+    margin:0;
+}
+.reviewListItem {
+    height: 360px;
+    width: 400px;
+    border: 3px solid $black;
+    border-radius: 30px;
+    display: inline-grid;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:rgb(239, 230, 230);
+    background-color: $gray;
+}
+.reviewListItem:hover {
+    background-color: $lightGray;
+    cursor:pointer;
+}
+.reviewListItem p{
+    text-align:center ;
+    margin: 0;
+    margin-top: 10px;
+}
+.reviewListItem * {
+    margin-top: 10px;
+}
+.reviewListItem input {
+    width:5%;
+    margin-left: 5%;
+}
+#reviewList {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows:minmax(auto, 150px);
+    gap:40px 5%;
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1E201E;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding:10px 10px 10px 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.top h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    color:#fff;
+}
+.top div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.top div button{
+    margin-right: 20px;
+    border-radius: 0;
+    background-color: $lightRed;
+    color:white;
+    border: none;
+    width:100px;
+    height:40px;
+}
+.top div button:hover{
+    cursor: pointer;
+    background-color: $Red;
+}
+hr {
+    color:#e6e6e6;
+}
+#review_form{
+    display:flex;
+    flex-direction: column;
+    width:30%;
+    text-align: center;
+    background-color: $lightGray;
+    padding: 20px 20px 20px 20px;
+    border-radius: 20px;
+}
+.review-div{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.review-div input, label,select{
+    margin-top: 10px;
+}
+.review-div input,select{
+    height:30px;
+    border-radius: 10px;
+}
+.review-div input{
+    padding: 0;
+    padding-left: 10px;
+}
+#review{
+    height:50px;
+    resize: vertical;
+}
+.error{
+    display: none;
+    color:$Red;
+}
+.cover{
+    width: 200px;
+    height: 200px;
+}
+.review-name{
+    font-size: 25px;
+}
+.raiting{
+    font-size: 40px;
+}
+.footer{
+    text-align: center;
+}
+
+
+progress[value] {
+    --w: 200px; /* the width*/
+    --color:  /* the progress color */
+      linear-gradient(#fff8,#fff0),
+      /* if < 30% "red" */
+      linear-gradient(red    0 0) 0 /calc(var(--w)*.3 - 100%) 1px,
+      /* if < 60% "orange" */
+      linear-gradient(orange 0 0) 0 /calc(var(--w)*.6 - 100%) 1px,
+      /* else "green" */
+      green;
+    --background: lightgrey; /* the background color */
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    width: var(--w);
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    background: var(--background);
+  }
+  progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+  }
+  progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+  }
+  #coverBig{
+    width:300px;
+    height:300px;
+  }
+  #imgCont{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    text-align: center;
+  }
+  #raiting {
+    font-size: 40px;
+    margin:0;
+  }
+  #progress {
+    margin-top:10px;
+    width:100%;
+    height:30px;
+  }
+  #reviewDesc{
+    width: 100%;
+    border: 3px solid $black;
+    border-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:rgb(239, 230, 230);
+    background-color: $gray;
+    display:flex;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .reviewCont{
+    margin-top:40px;
+    margin-bottom:40px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #reviewCont {
+    margin-left:20px;
+    font-size:20px;
+  }
+  .authContainer{
+    max-width: 440px;
+    padding: 0 20px;
+    margin: 170px auto;
+  }
+  .authWrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  }
+  .authWrapper .title{
+    height: 90px;
+    background: $lightRed;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .authWrapper form{
+    padding: 30px 25px 25px 25px;
+  }
+  .authWrapper form .row{
+    height: 45px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .authWrapper form .row input{
+    height: 100%;
+    width: 80%;
+    outline: none;
+    margin-left: 50px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  .authForm .row input:focus{
+    border-color: $lightRed;
+    box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
+  }
+  .authForm .row input::placeholder{
+    color: #999;
+  }
+  .authWrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    background: $lightRed;
+    border: 1px solid $lightRed;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .authWrapper form .pass{
+    margin: -8px 0 20px 0;
+  }
+  .authWrapper form .pass a{
+    color: $lightRed;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  .authWrapper form .pass a:hover{
+    text-decoration: underline;
+  }
+  .authWrapper form .button input{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 0px;
+    background: $lightRed;
+    border: 1px solid $lightRed;
+    cursor: pointer;
+  }
+  .authForm .button input:hover{
+    background: $Red;
+  }
+  .authWrapper form .signup-link{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .authWrapper form .signup-link a{
+    color: $lightRed;
+    text-decoration: none;
+  }
+  .authForm .signup-link a:hover{
+    text-decoration: underline;
+  }
+  
+  

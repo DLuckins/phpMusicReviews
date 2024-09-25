@@ -16,7 +16,7 @@
     <div class = "top">
         <h1 id ="topName"></h1>
         <div>
-        <a href="/"><button>Return</button></a>
+        <a href="/profile"><button>Return</button></a>
         </div>
     </div>
 <div class=reviewCont>

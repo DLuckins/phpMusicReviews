@@ -35,11 +35,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo json_encode($response);
     }
     catch(Exception $e){
-        $response = [
-            'status' => 'error',
-            'message' => 'The review with this name already exists'
-        ];
-        //header("Location: /add-review");
         echo json_encode($e->getMessage());
     }
 }
